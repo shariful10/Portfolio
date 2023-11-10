@@ -6,7 +6,7 @@ import Work from "../components/sections/Work";
 import Nav from "../components/shared/Nav";
 
 const Home = () => {
-	return <div className="">
+	return <div className="text-white">
       <Banner />
       <Nav />
       <About />
