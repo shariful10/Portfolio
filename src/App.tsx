@@ -8,6 +8,7 @@ function App() {
 			<Header />
 			<Outlet />
 			<Footer />
+			<div className="h-[4000px]" />
 		</div>
 	);
 }
