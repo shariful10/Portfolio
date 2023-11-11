@@ -32,16 +32,29 @@ const Banner = () => {
 								wrapper="span"
 								repeat={Infinity}
 							/>
-						L</div>
-						<p className="">
+						</div>
+						<p className="mb-8 max-w-lg mx-auto lg:mx-0">
 							Hey, I'm Shariful Islam, a Full Stack Developer. I love
 							building web application. Proficient in MERN Stack
 							development.
 						</p>
-						<div className="">
+						<div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
 							<button className="btn btn-lg">Contact me</button>
-                     <a href="#" className="text-gradient btn-link">My Portfolio</a>
+							<a href="#" className="text-gradient btn-link">
+								My Portfolio
+							</a>
 						</div>
+                  <div className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0">
+                     <a href="#">
+                        <FaGithub />
+                     </a>
+                     <a href="#">
+                        <FaLinkedin />
+                     </a>
+                     <a href="#">
+                        <FaDribbble />
+                     </a>
+                  </div>
 					</div>
 					<div className="">
 						<img src={Image} alt="" />
