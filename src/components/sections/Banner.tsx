@@ -3,15 +3,16 @@ import { fadeIn } from "../../variants";
 import Image from "../../assets/avatar.svg";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
-import Logo from "../shared/Logo";
 
 const Banner = () => {
 	return (
-		<div id="home" className="section">
+		<section id="home" className="min-h-[85vh] lg:min-h-[78vh] flex items-center">
 			<div className="w-full md:w-5/6 md:mx-auto px-5 md:px-0">
-				<div className="">
-					<div className="">
-						<Logo />
+				<div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+					<div className="flex-1 text-center font-secondary lg:text-left">
+						<h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
+                     Shariful <span>Islam</span>
+                  </h1>
 						<div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
 							<span className="mr-4">I am a</span>
 							<TypeAnimation
@@ -56,12 +57,12 @@ const Banner = () => {
                      </a>
                   </div>
 					</div>
-					<div className="">
+					<div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
 						<img src={Image} alt="" />
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
