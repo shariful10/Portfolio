@@ -5,7 +5,7 @@ const Header = () => {
 			<div className="w-full md:w-5/6 md:mx-auto px-5 md:px-0">
 				<div className="flex items-center justify-between">
 					<a href="#">
-						<h1 className="text-xl md:text-2xl md:leading-[28px] xl:text-[36px] leading-[24px] xl:leading-[40px] font-black font-primary">
+						<h1 className="text-xl md:text-2xl md:leading-[28px] xl:text-[32px] leading-[24px] xl:leading-[36px] font-black font-primary">
 							<span className="text">
 								SHARIFUL
 							</span> 

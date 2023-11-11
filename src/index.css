@@ -56,6 +56,8 @@
 	border-radius: 100%;
 }
 
+/* <==<<=== Tailwind CSS ===>>==> */
+
 @layer base {
 	body {
 		@apply font-secondary text-lg leading-8 text-white;
