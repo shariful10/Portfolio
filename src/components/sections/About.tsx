@@ -1,5 +1,5 @@
 const About = () => {
-	return <div>About</div>;
+	return <div id="about" className="section">About</div>;
 };
 
 export default About;
