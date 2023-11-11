@@ -6,13 +6,22 @@ import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 
 const Banner = () => {
 	return (
-		<section id="home" className="min-h-[85vh] lg:min-h-[78vh] flex items-center">
+		<section
+			id="home"
+			className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+		>
 			<div className="w-full md:w-5/6 md:mx-auto px-5 md:px-0">
 				<div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
 					<div className="flex-1 text-center font-secondary lg:text-left">
-						<h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
-                     Shariful <span>Islam</span>
-                  </h1>
+						<motion.h1
+							variants={fadeIn("up", 0.3)}
+							initial="hidden"
+							whileInView={"show"}
+							viewport={{ once: false, amount: 0.7 }}
+							className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+						>
+							Shariful <span>Islam</span>
+						</motion.h1>
 						<div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
 							<span className="mr-4">I am a</span>
 							<TypeAnimation
@@ -45,17 +54,17 @@ const Banner = () => {
 								My Portfolio
 							</a>
 						</div>
-                  <div className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0">
-                     <a href="#">
-                        <FaGithub />
-                     </a>
-                     <a href="#">
-                        <FaLinkedin />
-                     </a>
-                     <a href="#">
-                        <FaDribbble />
-                     </a>
-                  </div>
+						<div className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0">
+							<a href="#">
+								<FaGithub />
+							</a>
+							<a href="#">
+								<FaLinkedin />
+							</a>
+							<a href="#">
+								<FaDribbble />
+							</a>
+						</div>
 					</div>
 					<div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
 						<img src={Image} alt="" />
