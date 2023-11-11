@@ -40,6 +40,7 @@ const Banner = () => {
 						</p>
 						<div className="">
 							<button className="btn btn-lg">Contact me</button>
+                     <a href="#" className="text-gradient btn-link">My Portfolio</a>
 						</div>
 					</div>
 					<div className="">
