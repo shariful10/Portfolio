@@ -15,11 +15,11 @@ const Banner = () => {
 							<br />
 							ISLAM
 						</h1>
-						<div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold">
+						<div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
 							<span className="mr-4">I am a</span>
 							<TypeAnimation
 								sequence={[
-                           "Full Stack Developer",
+									"Full Stack Developer",
 									2000,
 									"React Developer",
 									2000,
@@ -30,12 +30,17 @@ const Banner = () => {
 									"Wordpress Developer",
 									2000,
 								]}
-                        speed={50}
-                        className="text-accent"
-                        wrapper="span"
-                        repeat={Infinity}
+								speed={50}
+								className="text-accent"
+								wrapper="span"
+								repeat={Infinity}
 							/>
 						</div>
+						<p className="">
+							Hey, I'm Shariful Islam, a Full Stack Developer. I love
+							building web application. Proficient in MERN Stack
+							development.
+						</p>
 					</div>
 					<div className="">
 						<img src={Image} alt="" />
