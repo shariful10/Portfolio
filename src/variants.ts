@@ -1,9 +1,9 @@
-interface Props {
-	delay: string;
-	direction: string;
-}
+interface FadeInProps {
+   direction: "up" | "down" | "left" | "right";
+   delay: number;
+ }
 
-export const fadeIn = ({ direction, delay }: Props) => {
+export const fadeIn = ({ direction, delay }: FadeInProps) => {
 	return {
 		hidden: {
 			y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
