@@ -73,7 +73,10 @@ const Banner = () => {
 							</a>
 						</motion.div>
 						<motion.div
-							
+							variants={fadeIn({ direction: "up", delay: 0.7 })}
+							initial="hidden"
+							whileInView={"show"}
+							viewport={{ once: false, amount: 0.7 }}
 							className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0"
 						>
 							<a href="#">
