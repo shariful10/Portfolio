@@ -22,7 +22,13 @@ const Banner = () => {
 						>
 							Shariful <span>Islam</span>
 						</motion.h1>
-						<div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
+						<motion.div
+							variants={fadeIn({ direction: "up", delay: 0.4 })}
+							initial="hidden"
+							whileInView={"show"}
+							viewport={{ once: false, amount: 0.7 }}
+							className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+						>
 							<span className="mr-4">I am a</span>
 							<TypeAnimation
 								sequence={[
@@ -42,7 +48,7 @@ const Banner = () => {
 								wrapper="span"
 								repeat={Infinity}
 							/>
-						</div>
+						</motion.div>
 						<p className="mb-8 max-w-lg mx-auto lg:mx-0">
 							Hey, I'm Shariful Islam, a Full Stack Developer. I love
 							building web application. Proficient in MERN Stack
