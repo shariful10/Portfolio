@@ -49,11 +49,17 @@ const Banner = () => {
 								repeat={Infinity}
 							/>
 						</motion.div>
-						<p className="mb-8 max-w-lg mx-auto lg:mx-0">
-							Hey, I'm Shariful Islam, a Full Stack Developer. I love
+						<motion.p
+							variants={fadeIn({ direction: "up", delay: 0.5 })}
+							initial="hidden"
+							whileInView={"show"}
+							viewport={{ once: false, amount: 0.7 }}
+							className="mb-8 max-w-lg mx-auto lg:mx-0"
+						>
+							Hey, I'm Shariful Islam, a Passionate  Full Stack Developer. I love
 							building web application. Proficient in MERN Stack
 							development.
-						</p>
+						</motion.p>
 						<div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
 							<button className="btn btn-lg">Contact me</button>
 							<a href="#" className="text-gradient btn-link">
