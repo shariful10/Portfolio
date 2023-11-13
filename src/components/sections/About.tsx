@@ -28,7 +28,7 @@ const About = () => {
 					>
 						<h2 className="h2 text-accent">About me.</h2>
 						<h3 className="h3 mb-4">
-							I'm a MERN Stack Developer with over 2 yaers of experience
+							I'm a MERN Stack Developer with over 2 yaers of experience.
 						</h3>
 						<p className="mb-6">
 							This is Shariful Islam, a MERN Stack developer passionate
