@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Image from "../../assets/avatar.svg";
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { TbBrandFiverr } from "react-icons/tb";
+import { HiDocumentDownload } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Banner = () => {
 	return (
@@ -67,10 +70,18 @@ const Banner = () => {
 							viewport={{ once: false, amount: 0.7 }}
 							className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
 						>
-							<button className="btn btn-lg">Contact me</button>
-							<a href="#" className="text-gradient btn-link">
+							<button className="btn btn-lg flex items-center gap-x-2">
+								Resume <HiDocumentDownload className="h-6 w-6" />
+							</button>
+							<Link
+								to="work"
+								activeClass="active"
+								smooth={true}
+								spy={true}
+								className="text-gradient btn-link cursor-pointer"
+							>
 								My Portfolio
-							</a>
+							</Link>
 						</motion.div>
 						<motion.div
 							variants={fadeIn({ direction: "up", delay: 0.7 })}
@@ -79,14 +90,20 @@ const Banner = () => {
 							viewport={{ once: false, amount: 0.7 }}
 							className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0"
 						>
-							<a href="#">
+							<a href="https://github.com/shariful10" target="_blank">
 								<FaGithub />
 							</a>
-							<a href="#">
+							<a
+								href="https://www.linkedin.com/in/shariful10"
+								target="_blank"
+							>
 								<FaLinkedin />
 							</a>
-							<a href="#">
-								<FaDribbble />
+							<a
+								href="https://www.fiverr.com/shariful102"
+								target="_blank"
+							>
+								<TbBrandFiverr />
 							</a>
 						</motion.div>
 					</div>
