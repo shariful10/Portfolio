@@ -24,7 +24,8 @@
 		"react-scroll": "^1.9.0",
 		"react-type-animation": "^3.2.0",
 		"sort-by": "^1.2.0",
-		"ts-node": "^10.9.1"
+		"ts-node": "^10.9.1",
+		"vercel": "^32.5.3"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.15",

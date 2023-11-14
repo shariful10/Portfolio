@@ -1,11 +1,12 @@
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Image from "../../assets/avatar.svg";
-import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TbBrandFiverr } from "react-icons/tb";
 import { HiDocumentDownload } from "react-icons/hi";
-import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import resume from "../../assets/Resume-Web Developer.pdf";
 
 const Banner = () => {
 	return (
@@ -70,9 +71,16 @@ const Banner = () => {
 							viewport={{ once: false, amount: 0.7 }}
 							className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
 						>
-							<button className="btn btn-lg flex items-center gap-x-2">
+							{/* <button className="btn btn-lg flex items-center gap-x-2">
 								Resume <HiDocumentDownload className="h-6 w-6" />
-							</button>
+							</button> */}
+							<a
+								href={resume}
+								download
+								className="btn btn-lg flex items-center gap-x-2"
+							>
+								Resume <HiDocumentDownload className="h-6 w-6" />
+							</a>
 							<Link
 								to="work"
 								activeClass="active"
