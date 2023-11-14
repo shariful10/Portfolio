@@ -4,11 +4,6 @@ This is Shariful Islam, a MERN Stack developer passionate about crafting dynamic
 
 ## Getting Started
 
-### Installation
-
-1. Clone the repository: `git clone https://github.com/shariful10/Portfolio.git`
-2. Navigate to the project directory: `cd Portfolio`
-3. Install dependencies: `npm i` or `yarn`
 4. Run the project: `npm run dev` or `yarn dev`
 
 ## Installation
