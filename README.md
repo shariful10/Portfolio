@@ -2,23 +2,41 @@
 
 This is Shariful Islam, a MERN Stack developer passionate about crafting dynamic web applications. I specialize in MongoDB, Express.js, React.js, and Node.js. With a focus on seamless user experiences, I thrive on turning innovative ideas into high-quality, performant software. Let's build something amazing together! 🚀💻
 
+## Installation
 
-## Getting Started
+To get started with Evolve Gym, follow these steps:
 
-Provide instructions on setting up and running your project locally.
+1. Clone the repository to your local machine:
 
-### Prerequisites
+   ```
+   git clone https://github.com/shariful10/Portfolio.git
+   ```
 
-List any software, libraries, or tools that need to be installed before running your project.
+2. Install the necessary dependencies:
 
-### Installation
+   ```
+   yarn
+   ```
 
-Step-by-step instructions on how to install and run your project.
+   or,
 
-1. Clone the repository: `git clone https://github.com/shariful10/Portfolio.git`
-2. Navigate to the project directory: `cd Portfolio`
-3. Install dependencies: `npm i` or `yarn`
-4. Run the project: `npm run dev` or `yarn dev`
+   ```
+   npm i
+   ```
+
+3. Start the application:
+
+   ```
+   yarn dev
+   ```
+
+   or,
+
+   ```
+   npm run dev
+   ```
+
+---
 
 
 ## Contributing
